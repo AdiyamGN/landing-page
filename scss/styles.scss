@@ -41,6 +41,11 @@ body {
 	padding: 0.3rem 1.5rem;
 }
 
+.button_large {
+	padding: 1rem 5rem;
+	font-size: 1.35rem;
+}
+
 .cf:before,
 .cf:after {
 	content: " ";
@@ -124,6 +129,8 @@ body {
 		background: $white;
 		padding: 4.5rem;
 		text-align: center;
+		width: 31%;
+		margin: -10rem 1% 5rem 1%;
 		-webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 6, 0.25);
 		-moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 6, 0.25);
 		box-shadow: 0px 0px 57px 0px rgba(4, 6, 6, 0.25);
@@ -149,18 +156,21 @@ body {
 #past_work {
 	margin-top: -30px;
 	background: $dark_grey;
-	padding: 8rem 0 10rem 0;
+	padding: 6.5rem 0 0 0;
 	position: relative;
 	overflow: hidden;
 	.title {
 		color: $white;
-		font-size: 3.5rem;
+		font-size: 3rem;
 		margin: 0 0 2.75rem 0;
 	}
 	#slider_buttons {
 		list-style: none;
 		padding: 0;
 		margin: 2rem 0;
+		a {
+			text-decoration: none;
+		}
 		li {
 			width: 9px;
 			height: 9px;
@@ -219,6 +229,41 @@ body {
 				z-index: 2;
 			}
 
+		}
+	}
+}
+
+// ------------------------ Contact Styles ------------------------ //
+
+#contact {
+	background: $grey_background;
+	padding: 6.5rem 0 8rem 0;
+	.title {
+		font-size: 3rem;
+		color: dark_grey;
+		margin: 0;
+	}
+	.sub_title {
+		font-size: 1.5rem;
+		color: $grey_copy;
+		width: 600px;
+		max-width: 100%;
+		display: block;
+		margin: 1.5rem auto 4rem auto;
+	}
+}
+
+// ------------------------ Footer Styles ------------------------ //
+
+footer {
+	margin: 0;
+	padding: 1.3rem 0;
+	.copyright {
+		font-weight: 700;
+		color: grey_copy;
+		a {
+			text-decoration: none;
+			color: $highlight;
 		}
 	}
 }
